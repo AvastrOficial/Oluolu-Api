@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bsz Code Bibloteca</title>
+    <!-- Agregar la fuente de Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <head>
+    </head>
+    <body>
+    <header>
+        <div class="header-content">
+            <a href="#" class="logo"><i class="logo-icon">public</i> OluOlu Bibloteca</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar contenido en español...">
+            </div>
+            <div class="nav-icons">
+                <a href="#" id="refresh-btn" title="Actualizar contenido"><i class="nav-icon">refresh</i></a>
+                <a href="#" id="history-btn" title="Ver historial"><i class="nav-icon">history</i></a>
+                <a href="#" id="profile-btn" title="Perfil"><i class="nav-icon">person</i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="update-notification" id="update-notification">
+        <span>¡Nuevo contenido disponible!</span>
+        <button id="show-new-content">Ver ahora</button>
+    </div>
+
+    <!-- Vista principal (index 1) -->
+    <div class="view active" id="view-main">
+        <div class="container">
+            <div class="controls">
+                <div class="filter-buttons">
+                    <button id="view-all" class="active">Todos</button>
+                    <button id="view-images">Solo imágenes</button>
+                    <button id="view-videos">Solo videos</button>
+                </div>
+                <div class="utility-buttons">
+                    <div class="language-filter">
+                        <i class="language-icon">language</i> Contenido Latinoamericano
+                    </div>
+                    <div class="region-info">
+                        <i class="region-icon">location_on</i> Región: US • Contenido: MX
+                    </div>
+                    <button id="clear-cache">Limpiar caché</button>
+                    <button id="clear-history">Limpiar historial</button>
+                </div>
+            </div>
+
+            <div id="blog-container"></div>
+            <div class="load-more-container">
+                <button id="load-more">Cargar más</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vista de Olvery (index 2) -->
+    <div class="view" id="view-olvery">
+        <div class="container">
+            <button class="back-button" id="back-from-olvery">
+                <i class="nav-icon">arrow_back</i> Volver al inicio
+            </button>
+            <h2 style="margin-bottom: 20px; text-align: center;">Olvery - Historial de visualizaciones</h2>
+            <div class="olvery-container" id="olvery-container"></div>
+        </div>
+    </div>
+
+    <!-- Vista de configuración (index 3) -->
+    <div class="view" id="view-settings">
+        <div class="container">
+            <button class="back-button" id="back-from-settings">
+                <i class="nav-icon">arrow_back</i> Volver al inicio
+            </button>
+            <div class="settings-container">
+                <h2 class="settings-title">Configuración</h2>
+                <div class="settings-option">
+                    <div>
+                        <h3>Limpiar caché</h3>
+                        <p>Elimina los datos almacenados temporalmente</p>
+                    </div>
+                    <button id="settings-clear-cache">Limpiar</button>
+                </div>
+                <div class="settings-option">
+                    <div>
+                        <h3>Limpiar historial</h3>
+                        <p>Elimina tu historial de visualización</p>
+                    </div>
+                    <button id="settings-clear-history">Limpiar</button>
+                </div>
+                <div class="settings-option">
+                    <div>
+                        <h3>Configuración de región</h3>
+                        <p>Cambia la región para el contenido</p>
+                    </div>
+                    <button>Cambiar</button>
+                </div>
+                <div class="settings-option">
+                    <div>
+                        <h3>Preferencias de idioma</h3>
+                        <p>Selecciona tu idioma preferido</p>
+                    </div>
+                    <button>Cambiar</button>
+                </div>
+                <div class="settings-option">
+                    <div>
+                        <h3>Restablecer configuración</h3>
+                        <p>Vuelve a la configuración predeterminada</p>
+                    </div>
+                    <button class="danger">Restablecer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
