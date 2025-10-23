@@ -1,6 +1,6 @@
 # Oluolu-Api
 
-Este repositorio contiene la implementación principal (main) para manejar archivos y consumir las APIs relacionadas con el sistema de Blogs de **Clover Social** , un proyecto orientado a la gestión y visualización de contenido dinámico a través de APIs REST.
+Este repositorio contiene la implementación principal (main) para manejar archivos y consumir las APIs relacionadas con el sistema de Blogs de **OluOlu** , un proyecto orientado a la gestión y visualización de contenido dinámico a través de APIs REST.
 
 ---
 
@@ -35,7 +35,7 @@ Las APIs son el núcleo que permiten la comunicación con el backend. A continua
 ### Obtener imágenes en posts recomendados
 
 - **URL base:**  
-  `https://api.cloverspace.io/f/v1/blogs`
+  `https://api2.oluolu.io/f/v1/blogs`
 
 | Parámetro      | Valor por ejemplo      | Descripción                          |
 |----------------|-----------------------|------------------------------------|
@@ -45,19 +45,19 @@ Las APIs son el núcleo que permiten la comunicación con el backend. A continua
 | `pageToken`    | (opcional)            | Token para paginación, permite cargar más resultados en páginas siguientes. |
 
 ---
-# APIs Clover.Social Blogs
+# APIs OluOlu Blogs
 
 ### 1. Obtener posts recientes
 
 - **URL:**  
-  `https://api.cloverspace.io/f/v1/blogs?type=latest&size=10`
+  `https://api2.oluolu.io/f/v1/blogs?type=recommend&size=30`
 - **Descripción:**  
   Obtiene los últimos 10 posts publicados, ordenados por fecha de creación para mostrar contenido fresco y actualizado.
 
 ### 2. Obtener videos recomendados
 
 - **URL:**  
-  `https://api.cloverspace.io/f/v1/blogs?type=recommend&rcmdBlogLabel=video&size=5`
+  `https://api2.oluolu.io/f/v1/blogs?type=recommend&rcmdBlogLabel=video&size=30`
 
 - **Descripción:**  
   Obtiene hasta 5 posts recomendados que contienen videos, ideal para mostrar contenido audiovisual destacado.
@@ -65,7 +65,7 @@ Las APIs son el núcleo que permiten la comunicación con el backend. A continua
 ### 3. Obtener imágenes en posts recomendados
 
 - **URL base:**  
-  `https://api.cloverspace.io/f/v1/blogs`
+  `https://api2.oluolu.io/f/v1/blogs?type=recommend&rcmdBlogLabel=image&size=30`
 
 - **Descripción:**  
   Recupera posts recomendados que incluyen imágenes, útil para galerías o vistas tipo feed visual.
@@ -73,7 +73,7 @@ Las APIs son el núcleo que permiten la comunicación con el backend. A continua
 ### 4. Obtener música recomendada
 
 - **URL:**  
-  `https://api.cloverspace.io/f/v1/blogs?type=recommend&rcmdBlogLabel=music&size=10`
+  `https://api2.oluolu.io/f/v1/blogs?type=recommend&rcmdBlogLabel=music&size=30`
 
 - **Descripción:**  
   Obtiene hasta 10 posts recomendados relacionados con música, para mostrar contenido musical relevante.
